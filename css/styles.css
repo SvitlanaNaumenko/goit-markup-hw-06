@@ -1210,7 +1210,6 @@ button {
   }
 
   .footer-logo-text {
-    margin-left: 0;
     margin-left: 108px;
   }
 
@@ -1223,13 +1222,14 @@ button {
   .footer-soc-text {
     text-align: left;
     width: auto;
-    padding-right: 0 auto;
+    padding-right: 0;
   }
 
   .footer-soc-list {
     display: flex;
     justify-content: flex-start;
     gap: 16px;
+    margin-bottom: 0;
   }
 
   .footer-subscribe {
@@ -1396,8 +1396,8 @@ button {
   }
 
   .team-container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
