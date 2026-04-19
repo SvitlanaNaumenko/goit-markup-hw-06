@@ -25,6 +25,7 @@
           <a class="logo header-logo" href="./index.html"
             >Web<span class="logo-part">Studio</span>
           </a>
+
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link current" href="./index.html">Studio</a>
@@ -37,6 +38,12 @@
             </li>
           </ul>
         </nav>
+
+        <button class="menu-open-btn" type="button" aria-controls="mobile-menu">
+          <svg class="menu-open-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-hamburger"></use>
+          </svg>
+        </button>
 
         <address class="contacts">
           <ul class="contacts-list">
@@ -59,7 +66,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="hero-button">Order Service</button>
+          <button type="button" class="hero-button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
 
@@ -124,12 +133,36 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-item">
-              <img
-                src="./images/img1.jpg"
-                alt="photo Mark Guerrero"
-                width="264"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img1-mobile-1x.jpg,
+                    ./images/img1-mobile-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img1-tablet-1x.jpg,
+                    ./images/img1-tablet-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/img1-desktop-1x.jpg,
+                    ./images/img1-desktop-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/img1.jpg"
+                  width="264"
+                  alt="photo Mark Guerrero"
+                  class="team-img"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-subtitle">Mark Guerrero</h3>
                 <p class="team-text">Product Designer</p>
@@ -170,12 +203,36 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img2.jpg"
-                alt="photo Tom Ford"
-                width="264"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img2-mobile-1x.jpg,
+                    ./images/img2-mobile-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img2-tablet-1x.jpg,
+                    ./images/img2-tablet-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/img2-desktop-1x.jpg,
+                    ./images/img2-desktop-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/img2.jpg"
+                  alt="photo Tom Ford"
+                  width="264"
+                  class="team-img"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-subtitle">Tom Ford</h3>
                 <p class="team-text">Frontend Developer</p>
@@ -216,12 +273,36 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img3.jpg"
-                alt="photo Camila Garcia"
-                width="264"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img3-mobile-1x.jpg,
+                    ./images/img3-mobile-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img3-tablet-1x.jpg,
+                    ./images/img3-tablet-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/img3-desktop-1x.jpg,
+                    ./images/img3-desktop-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/img3.jpg"
+                  alt="photo Camila Garcia"
+                  width="264"
+                  class="team-img"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-subtitle">Camila Garcia</h3>
                 <p class="team-text">Marketing</p>
@@ -262,12 +343,36 @@
             </li>
 
             <li class="team-item">
-              <img
-                src="./images/img4.jpg"
-                alt="photo Daniel Wilson"
-                width="264"
-                class="team-img"
-              />
+              <picture>
+                <source
+                  media="(min-width: 320px)"
+                  srcset="
+                    ./images/img4-mobile-1x.jpg,
+                    ./images/img4-mobile-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/img4-tablet-1x.jpg,
+                    ./images/img4-tablet-2x.jpg
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./images/img4-desktop-1x.jpg,
+                    ./images/img4-desktop-2x.jpg
+                  "
+                />
+                <img
+                  src="./images/img4.jpg"
+                  alt="photo Daniel Wilson"
+                  width="264"
+                  class="team-img"
+                />
+              </picture>
+
               <div class="team-content">
                 <h3 class="team-subtitle">Daniel Wilson</h3>
                 <p class="team-text">UI Designer</p>
@@ -317,12 +422,36 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img5.jpg"
-                    alt="Mobile banking app interface design in purple tones"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img5-mobile-1x.jpg,
+                        ./images/img5-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img5-tablet-1x.jpg,
+                        ./images/img5-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img5-desktop-1x.jpg,
+                        ./images/img5-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img5.jpg"
+                      alt="Mobile banking app interface design in purple tones"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -341,12 +470,35 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img6.jpg"
-                    alt="Hand holding a smartphone scanning a QR code on a payment terminal"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img6-mobile-1x.jpg,
+                        ./images/img6-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img6-tablet-1x.jpg,
+                        ./images/img6-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img6-desktop-1x.jpg,
+                        ./images/img6-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img6.jpg"
+                      alt="Hand holding a smartphone scanning a QR code on a payment terminal"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -365,12 +517,35 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img7.jpg"
-                    alt="Meditation app interface displayed on a laptop and smartphone screen"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img7-mobile-1x.jpg,
+                        ./images/img7-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img7-tablet-1x.jpg,
+                        ./images/img7-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img7-desktop-1x.jpg,
+                        ./images/img7-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img7.jpg"
+                      alt="Meditation app interface displayed on a laptop and smartphone screen"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -389,12 +564,35 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img8.jpg"
-                    alt="Interior view of a car dashboard with a smartphone mount for a taxi service"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img8-mobile-1x.jpg,
+                        ./images/img8-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img8-tablet-1x.jpg,
+                        ./images/img8-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img8-desktop-1x.jpg,
+                        ./images/img8-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img8.jpg"
+                      alt="Interior view of a car dashboard with a smartphone mount for a taxi service"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -413,12 +611,35 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img9.jpg"
-                    alt="Set of mobile screen illustrations featuring space and night landscapes"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img9-mobile-1x.jpg,
+                        ./images/img9-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img9-tablet-1x.jpg,
+                        ./images/img9-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img9-desktop-1x.jpg,
+                        ./images/img9-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img9.jpg"
+                      alt="Set of mobile screen illustrations featuring space and night landscapes"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -437,12 +658,35 @@
             <li class="portfolio-item">
               <a href="" class="project-link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/img10.jpg"
-                    alt="Smiling woman in glasses and a beanie using an online learning platform"
-                    width="360"
-                    class="portfolio-img"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 320px)"
+                      srcset="
+                        ./images/img10-mobile-1x.jpg,
+                        ./images/img10-mobile-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/img10-tablet-1x.jpg,
+                        ./images/img10-tablet-2x.jpg
+                      "
+                    />
+                    <source
+                      media="(min-width: 1440px)"
+                      srcset="
+                        ./images/img10-desktop-1x.jpg,
+                        ./images/img10-desktop-2x.jpg
+                      "
+                    />
+                    <img
+                      src="./images/img10.jpg"
+                      alt="Smiling woman in glasses and a beanie using an online learning platform"
+                      width="360"
+                      class="portfolio-img"
+                    />
+                  </picture>
                   <div class="project-overlay">
                     <p class="overley-text">
                       14 Stylish and User-Friendly App Design Concepts · Task
@@ -529,9 +773,9 @@
       </div>
     </footer>
 
-    <div class="modal-overlay" id="modal-overlay">
+    <div class="backdrop modal-overlay is-open" id="modal-overlay" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-button">
+        <button type="button" class="modal-close-button" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -608,8 +852,10 @@
                 <svg class="checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg> </span
-              >I accept the terms and conditions of the
-              <a href="" class="policy-link">Privacy Policy</a>
+              ><span class="checkbox-text"
+                >I accept the terms and conditions of the
+                <a href="" class="policy-link">Privacy Policy</a>
+              </span>
             </label>
           </div>
 
@@ -617,5 +863,74 @@
         </form>
       </div>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="modal-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-nav">
+        <li>
+          <a href="./index.html" class="mobile-link">Studio</a>
+        </li>
+        <li>
+          <a href="" class="mobile-link">Portfolio</a>
+        </li>
+        <li>
+          <a href="" class="mobile-link">Contacts</a>
+        </li>
+      </ul>
+
+      <ul class="mobile-contacts">
+        <li>
+          <a href="tel:+110001111111" class="contacts-link"
+            >+11 (000) 111-11-11</a
+          >
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="contacts-link"
+            >info@devstudio.com
+          </a>
+        </li>
+      </ul>
+
+      <ul class="mobile-soc-list">
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">
+            <svg class="mobile-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram2"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">
+            <svg class="mobile-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">
+            <svg class="mobile-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook1"></use>
+            </svg>
+          </a>
+        </li>
+
+        <li class="mobile-soc-item">
+          <a href="" class="mobile-soc-link">
+            <svg class="mobile-soc-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin1"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
