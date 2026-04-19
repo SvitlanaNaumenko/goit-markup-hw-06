@@ -151,7 +151,7 @@ button {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 72px;
-  max-width: 320px;
+  max-width: 216px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 36px;
@@ -238,7 +238,7 @@ button {
 .features-text {
   color: #434455;
   font-family: 'Roboto', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -1036,6 +1036,10 @@ button {
     flex-grow: 1;
   }
 
+  .menu-container {
+    display: none;
+  }
+
   .menu-open-btn {
     display: none;
   }
@@ -1126,6 +1130,10 @@ button {
     max-width: 496px;
   }
   /*features tablet */
+  .features-subtitle {
+    text-align: left;
+  }
+
   .features-list {
     gap: 72px 24px;
   }
@@ -1140,7 +1148,8 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 64px;
     padding-left: 108px;
     padding-right: 108px;
   }
@@ -1152,7 +1161,7 @@ button {
   /* portfolio tablet */
 
   .portfolio-list {
-    row-gap: 48px;
+    row-gap: 72px;
     column-gap: 24px;
   }
 
@@ -1183,7 +1192,6 @@ button {
 
   .footer-logo-text {
     margin-left: 0;
-    margin-bottom: 72px;
     margin-left: 108px;
   }
 
@@ -1340,7 +1348,7 @@ button {
   }
 
   .features-list {
-    gap: 24px;
+    row-gap: 24px;
   }
 
   .features-item {
@@ -1360,7 +1368,6 @@ button {
     display: flex;
     margin: 0 auto;
     width: 100%;
-    gap: 24px;
   }
 
   .team-item {
@@ -1442,15 +1449,15 @@ button {
 
   /* footer */
   .footer {
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding: 100px 0;
     align-items: center;
     align-items: baseline;
   }
   .footer-container {
-    max-width: 1440px;
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+    align-items: baseline;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -1463,7 +1470,7 @@ button {
   }
 
   .footer-logo-text {
-    padding-right: 120px;
+    margin-right: 120px;
     margin-bottom: 0;
     margin-left: 0;
   }
