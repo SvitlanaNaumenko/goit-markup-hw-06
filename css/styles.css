@@ -1051,6 +1051,10 @@ button {
     flex-grow: 1;
   }
 
+  .mobile-menu-overlay {
+    display: none;
+  }
+
   .menu-container {
     display: none;
   }
@@ -1165,8 +1169,7 @@ button {
     width: 100%;
     column-gap: 24px;
     row-gap: 64px;
-    padding-left: 108px;
-    padding-right: 108px;
+    padding: 0;
   }
 
   .team-item {
