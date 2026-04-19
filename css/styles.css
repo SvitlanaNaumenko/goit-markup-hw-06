@@ -66,8 +66,7 @@ button {
 }
 
 .contacts,
-.nav-list,
-.mail-link {
+.nav-list {
   display: none;
 }
 
@@ -200,6 +199,10 @@ button {
   justify-content: center;
   width: 100%;
   gap: 72px;
+}
+
+.features-item {
+  width: 100%;
 }
 
 .features {
@@ -1517,7 +1520,7 @@ button {
   .subscribe-form {
     display: flex;
     align-items: center;
-    gap: 0;
+    gap: 24px;
   }
 
   .footer-subscribe {
