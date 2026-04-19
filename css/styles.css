@@ -59,8 +59,10 @@ button {
 
 .container {
   max-width: 320px;
-  padding: 0 16px;
-  margin: 0 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .contacts,
@@ -201,11 +203,11 @@ button {
 
 .features {
   background-color: #ffffff;
-  padding-top: 95px;
-  padding-bottom: 95px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 
-.features-icon {
+.features-icon-container {
   display: none;
 }
 
@@ -225,9 +227,9 @@ button {
 .features-subtitle {
   color: #2e2f42;
   font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   padding-bottom: 8px;
   text-align: center;
@@ -666,7 +668,7 @@ button {
 .modal {
   background-color: #fcfcfc;
   border-radius: 4px;
-  padding: 72px 16px 16px 24px;
+  padding: 72px 16px 24px 16px;
   position: relative;
   width: 288px;
   min-height: 623px;
@@ -1251,13 +1253,13 @@ button {
 
 /* Dextop(1440px+) */
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   /* header dextop */
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     width: 100%;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -1381,8 +1383,8 @@ button {
     box-shadow: none;
   }
 
-  .portfolio-item :hover,
-  .portfolio-item :focus {
+  .portfolio-item:hover,
+  .portfolio-item:focus {
     box-shadow:
       0 2px 1px 0 rgba(46, 47, 66, 0.08),
       0 1px 1px 0 rgba(46, 47, 66, 0.16),
@@ -1391,7 +1393,7 @@ button {
   }
 
   .portfolio-list {
-    row-gap: 72px;
+    row-gap: 48px;
     column-gap: 24px;
   }
 
