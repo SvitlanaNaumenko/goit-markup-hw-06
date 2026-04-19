@@ -480,11 +480,9 @@ button {
 /* footer */
 .footer {
   background-color: #2e2f42;
-  padding-bottom: 96px;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 96px;
+  padding: 96px 0;
 }
+
 .footer-container {
   display: flex;
   flex-direction: column;
@@ -1402,8 +1400,6 @@ button {
   .team-container {
     padding-top: 0;
     padding-bottom: 0;
-    padding-left: 0;
-    padding-right: 0;
     margin: 0 auto;
   }
 
