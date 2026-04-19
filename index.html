@@ -39,7 +39,11 @@
           </ul>
         </nav>
 
-        <button class="menu-open-btn" type="button" aria-controls="mobile-menu">
+        <button
+          class="menu-open-btn js-open-menu"
+          type="button"
+          aria-controls="mobile-menu"
+        >
           <svg class="menu-open-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu-hamburger"></use>
           </svg>
@@ -156,11 +160,7 @@
                   "
                 />
                 <img
-                  src="./images/img1-mobile-1x.jpg"
-                  srcset="
-                    ./images/img1-mobile-1x.jpg 1x,
-                    ./images/img1-mobile-2x.jpg 2x
-                  "
+                  src="./images/img1-desktop-1x.jpg"
                   width="264"
                   alt="photo Mark Guerrero"
                   class="team-img"
@@ -230,11 +230,7 @@
                   "
                 />
                 <img
-                  src="./images/img2.jpg"
-                  srcset="
-                    ./images/img2-mobile-1x.jpg 1x,
-                    ./images/img2-mobile-2x.jpg 2x
-                  "
+                  src="./images/img2-desktop-1x.jpg"
                   alt="photo Tom Ford"
                   width="264"
                   class="team-img"
@@ -304,11 +300,7 @@
                   "
                 />
                 <img
-                  src="./images/img3.jpg"
-                  srcset="
-                    ./images/img3-mobile-1x.jpg 1x,
-                    ./images/img3-mobile-2x.jpg 2x
-                  "
+                  src="./images/img3-desktop-1x.jpg"
                   alt="photo Camila Garcia"
                   width="264"
                   class="team-img"
@@ -378,11 +370,7 @@
                   "
                 />
                 <img
-                  src="./images/img4.jpg"
-                  srcset="
-                    ./images/img4-mobile-1x.jpg 1x,
-                    ./images/img4-mobile-2x.jpg 2x
-                  "
+                  src="./images/img4-desktop-1x.jpg"
                   alt="photo Daniel Wilson"
                   width="264"
                   class="team-img"
@@ -461,11 +449,7 @@
                       "
                     />
                     <img
-                      src="./images/img5.jpg"
-                      srcset="
-                        ./images/img5-mobile-1x.jpg 1x,
-                        ./images/img5-mobile-2x.jpg 2x
-                      "
+                      src="./images/img5-desktop-1x.jpg"
                       alt="Mobile banking app interface design in purple tones"
                       width="360"
                       class="portfolio-img"
@@ -513,11 +497,7 @@
                       "
                     />
                     <img
-                      src="./images/img6.jpg"
-                      srcset="
-                        ./images/img6-mobile-1x.jpg 1x,
-                        ./images/img6-mobile-2x.jpg 2x
-                      "
+                      src="./images/img6-desktop-1x.jpg"
                       alt="Hand holding a smartphone scanning a QR code on a payment terminal"
                       width="360"
                       class="portfolio-img"
@@ -564,11 +544,7 @@
                       "
                     />
                     <img
-                      src="./images/img7.jpg"
-                      srcset="
-                        ./images/img7-mobile-1x.jpg 1x,
-                        ./images/img7-mobile-2x.jpg 2x
-                      "
+                      src="./images/img7-desktop-1x.jpg"
                       alt="Meditation app interface displayed on a laptop and smartphone screen"
                       width="360"
                       class="portfolio-img"
@@ -615,11 +591,7 @@
                       "
                     />
                     <img
-                      src="./images/img8.jpg"
-                      srcset="
-                        ./images/img8-mobile-1x.jpg 1x,
-                        ./images/img8-mobile-2x.jpg 2x
-                      "
+                      src="./images/img8-desktop-1x.jpg"
                       alt="Interior view of a car dashboard with a smartphone mount for a taxi service"
                       width="360"
                       class="portfolio-img"
@@ -666,11 +638,7 @@
                       "
                     />
                     <img
-                      src="./images/img9.jpg"
-                      srcset="
-                        ./images/img9-mobile-1x.jpg 1x,
-                        ./images/img9-mobile-2x.jpg 2x
-                      "
+                      src="./images/img9-desktop-1x.jpg"
                       alt="Set of mobile screen illustrations featuring space and night landscapes"
                       width="360"
                       class="portfolio-img"
@@ -717,11 +685,7 @@
                       "
                     />
                     <img
-                      src="./images/img10.jpg"
-                      srcset="
-                        ./images/img10-mobile-1x.jpg 1x,
-                        ./images/img10-mobile-2x.jpg 2x
-                      "
+                      src="./images/img10-desktop-1x.jpg"
                       alt="Smiling woman in glasses and a beanie using an online learning platform"
                       width="360"
                       class="portfolio-img"
@@ -904,73 +868,75 @@
       </div>
     </div>
 
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button type="button" class="menu-toggle js-close-menu">
-        <svg class="modal-close-icon" width="8" height="8">
-          <use href="./images/icons.svg#icon-close"></use>
-        </svg>
-      </button>
+    <div class="mobile-menu-overlay js-menu-container" id="mobile-menu">
+      <div class="mobile-menu-container">
+        <button type="button" class="menu-toggle js-close-menu">
+          <svg class="modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
 
-      <ul class="mobile-nav">
-        <li>
-          <a href="./index.html" class="mobile-link">Studio</a>
-        </li>
-        <li>
-          <a href="" class="mobile-link">Portfolio</a>
-        </li>
-        <li>
-          <a href="" class="mobile-link">Contacts</a>
-        </li>
-      </ul>
+        <ul class="mobile-nav">
+          <li>
+            <a href="./index.html" class="mobile-link">Studio</a>
+          </li>
+          <li>
+            <a href="" class="mobile-link">Portfolio</a>
+          </li>
+          <li>
+            <a href="" class="mobile-link">Contacts</a>
+          </li>
+        </ul>
 
-      <ul class="mobile-contacts">
-        <li>
-          <a href="tel:+110001111111" class="contacts-link"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-        <li>
-          <a href="mailto:info@devstudio.com" class="mail-link"
-            >info@devstudio.com
-          </a>
-        </li>
-      </ul>
+        <ul class="mobile-contacts">
+          <li>
+            <a href="tel:+110001111111" class="contacts-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a href="mailto:info@devstudio.com" class="mail-link"
+              >info@devstudio.com
+            </a>
+          </li>
+        </ul>
 
-      <ul class="mobile-soc-list">
-        <li class="mobile-soc-item">
-          <a href="" class="mobile-soc-link">
-            <svg class="mobile-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-instagram2"></use>
-            </svg>
-          </a>
-        </li>
+        <ul class="mobile-soc-list">
+          <li class="mobile-soc-item">
+            <a href="" class="mobile-soc-link">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram2"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="mobile-soc-item">
-          <a href="" class="mobile-soc-link">
-            <svg class="mobile-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-twitter1"></use>
-            </svg>
-          </a>
-        </li>
+          <li class="mobile-soc-item">
+            <a href="" class="mobile-soc-link">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter1"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="mobile-soc-item">
-          <a href="" class="mobile-soc-link">
-            <svg class="mobile-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-facebook1"></use>
-            </svg>
-          </a>
-        </li>
+          <li class="mobile-soc-item">
+            <a href="" class="mobile-soc-link">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-facebook1"></use>
+              </svg>
+            </a>
+          </li>
 
-        <li class="mobile-soc-item">
-          <a href="" class="mobile-soc-link">
-            <svg class="mobile-soc-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-linkedin1"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+          <li class="mobile-soc-item">
+            <a href="" class="mobile-soc-link">
+              <svg class="mobile-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-linkedin1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
-
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
